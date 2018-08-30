@@ -19,7 +19,7 @@ WORK_DIR=yoru-work-directory
 cd $WORK_DIR
 git clone git@github.com:hagetak/karabiner-elements-config.git
 
-mkdir -p ~/.config/karabiner/
-cp ~/.config/karabiner/karabiner.json{,.org}
-ln -s $WORK_DIR/karabiner-elements-config/karabiner.json ~/.config/karabiner/
+mkdir -p ~/.config/
+mv ~/.config/karabiner{,.org}
+ln -s $WORK_DIR/karabiner-elements-config/karabiner ~/.config/karabiner/
 ```
